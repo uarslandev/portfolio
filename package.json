@@ -4,8 +4,8 @@
   "description": "Umut's website",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "test": "next build",
+    "dev": "next dev",
+    "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },

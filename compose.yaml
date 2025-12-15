@@ -1,0 +1,20 @@
+services:
+  app-dev:
+    build:
+      context: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: npm run dev
+  app-prod:
+    build:
+      context: .
+      target: prod
+    environment:
+      NODE_ENV: production
+    ports:
+      - "8080:3000"
